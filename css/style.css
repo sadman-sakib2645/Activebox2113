@@ -152,10 +152,15 @@ nav{
     top: 0;
     left: 0;
     z-index: 99999;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 nav .menu{
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
 }
@@ -522,6 +527,189 @@ footer .f-content .content1000 .padding{
 .aaa{
     color: rgb(186, 214, 23);
 }
+
+
+/* ==========================
+        footer css ends
+========================== */
+#back-top{
+    width: 30px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99999;
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    display: none;
+}
+
+.nav-fix{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2222;
+    background: red;
+}
+
+.preloader{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading2{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    border-top-color: hsl(44, 39%, 14%);
+    border-bottom-color: rgb(255, 0, 0);
+    animation:load 3s linear infinite ;
+    -webkit-animation:load2 3s linear infinite ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.preloader .loading .loading1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid black;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: hsl(229, 100%, 29%);
+    animation:load1 200s linear infinite ;
+    -webkit-animation:load1 200s linear infinite ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.preloader .loading{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    border-top-color: hsl(69, 100%, 50%);
+    border-bottom-color: rgb(255, 0, 0);
+    animation:load 3s linear infinite ;
+    -webkit-animation:load 3s linear infinite ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loading3{
+    width: 100px;
+    height: 100px;
+    background-image: url(../Images/ld.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: scale(150%);
+    -webkit-transform: scale(150%);
+    -moz-transform: scale(150%);
+    -ms-transform: scale(150%);
+    -o-transform: scale(150%);
+    animation:load3 3s linear infinite ;
+    -webkit-animation:load3 3s linear infinite ;
+}
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+}
+
+@keyframes load1{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+@keyframes load2{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
 
 /* ===========================
             project ends
